@@ -41,10 +41,6 @@ class HomePage extends StatelessWidget {
               onTap: logic.toLogin,
               child: const Text('toLogin'),
             ),
-            ButtonWidget(
-              onTap: logic.toTest,
-              child: const Text('toTest'),
-            ),
           ],
         ),
       ),

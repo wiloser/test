@@ -6,8 +6,6 @@ import 'package:test_work/page/home/view.dart';
 import 'package:test_work/page/login/view.dart';
 import 'package:test_work/page/workPlace/view.dart';
 
-import '../page/test/view.dart';
-
 class Routes {
   static final List<GetPage> routes = [
     GetPage(name: '/', page: () => HomePage()),
@@ -15,7 +13,6 @@ class Routes {
     GetPage(name: info, page: () => Container()),
     GetPage(name: select, page: () => Container()),
     GetPage(name: login, page: () => LoginPage()),
-    GetPage(name: test, page: () => TestPage()),
   ];
 
   static String get work => '/work';
@@ -25,6 +22,4 @@ class Routes {
   static String get select => '/select';
 
   static String get login => '/login';
-
-  static String get test => '/test';
 }

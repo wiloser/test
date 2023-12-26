@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:get/get.dart';
 import 'package:test_work/api/api.dart';
 
@@ -13,7 +11,7 @@ class HomeLogic extends GetxController {
     Get.toNamed(Routes.work);
   }
 
-  void toInfoPlace() async{
+  void toInfoPlace() async {
     var data = await Api.login();
     print(data.toString());
     print('jjj');
@@ -30,9 +28,5 @@ class HomeLogic extends GetxController {
 
   void toLogin() {
     Get.toNamed(Routes.login);
-  }
-
-  void toTest() {
-    Get.toNamed(Routes.test);
   }
 }
